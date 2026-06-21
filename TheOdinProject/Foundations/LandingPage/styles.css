@@ -1,0 +1,338 @@
+/* Landing Page style CSS file */
+
+
+*{
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+/* define a size for the full html page and center the content */
+html
+{
+  display: flex;
+  justify-content: center;
+  height: 1912px;
+}
+
+/* Define the body as flex column oriented content */
+.body
+{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* force the width of every items inside the body to a fixed width, also change the direction of flex display to row*/
+.nav-bar, .hero, .quote, .action, .footer, .content
+{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+}
+
+/* Base background color for header and footer */
+.nav-bar, .footer, .hero, .hero .hero-content, .hero .hero-placeholder, #hero-title, #hero-text, #hero-button, .hero-button-container, .footer-content, .logo, .header-links, .link
+{
+  background-color: #1F2937;
+}
+
+/* Base background color for content */
+.content, #content-title, .content-boxes, .box-bloc, .box, .box-subtext, .action
+{
+  background-color: #F9FAF8;
+}
+
+/* Header style */
+.logo
+{
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.nav-bar
+{
+  padding-top: 10px;
+  height: 50px;
+}
+
+.header-links
+{
+  flex: initial;
+  height: 100%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.link
+{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: right;
+}
+
+.hero
+{
+  flex: initial;
+  padding-top: 110px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-content
+{
+  flex: initial;
+  width: 35%;
+  height: 100%;
+  padding-left: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;     
+}
+
+.hero-button-container
+{
+  flex: initial;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-button
+{
+  height: 40px;
+  width: 130px;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border-radius: 7px;
+}
+
+.hero-placeholder
+{
+  flex: initial;
+  width: 35%;
+  padding-top: 4px;
+  padding-left: 2%;
+  padding-right: 12%;
+  padding-bottom: 4px;
+}
+
+.hero-content #hero-title
+{
+  flex: initial;
+  padding-top: 10px;;
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 550;
+}
+
+.hero-content #hero-text, .link
+{
+  flex: initial;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #E5E7EB;
+}
+
+.hero-content #hero-text
+{
+  padding-right: 12%;
+}
+
+#hero-img
+{
+  flex: auto;
+  color: #E5E7EB;
+  background-color: rgb(146, 146, 146);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.content
+{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.content .top-content #content-title
+{
+  color: #1F2937;
+  font-weight: 900;
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+
+.content-boxes
+{
+  flex: initial;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-bloc
+{
+  flex: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.box
+{
+  outline: 3px solid #3882F6;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.box-subtext
+{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  width: 160px;
+  text-align: center;
+}
+
+.content
+{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 145px;
+}
+
+.quote
+{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #E5E7EB;
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+
+.quote-text
+{
+  flex: auto;
+  width: 58%;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  text-align: left;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.quote-author
+{
+  flex: auto;
+  margin-right: 22%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: #E5E7EB;
+  color: #1F2937;
+}
+
+.action
+{
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.action-content
+{
+  flex: initial;
+  width: 80%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.action-text1
+{
+  background-color: #3882F6;
+  color: #E5E7EB;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.action-text2
+{
+  background-color: #3882F6;
+  color: #E5E7EB;
+}
+
+.action-button-container
+{
+  flex: auto;
+  max-width: 140px;
+  background-color: #3882F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#action-button
+{
+  height: 40px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border-radius: 7px;
+  border: solid 3px #E5E7EB;
+  align-self: center;
+}
+
+.footer
+{
+  flex: auto;
+  height: 80px;
+  padding-top: 30;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content
+{
+  flex: initial;
+  align-self: center;
+  color: #E5E7EB;
+  font-size: 16px;
+  font-weight: lighter;
+}
